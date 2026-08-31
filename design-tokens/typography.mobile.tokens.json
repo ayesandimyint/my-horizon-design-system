@@ -1,0 +1,166 @@
+{
+  "fontfamily-body": {
+    "$type": "fontFamily",
+    "$value": "Figtree",
+    "$description": "Body copy family."
+  },
+  "fontfamily-heading": {
+    "$type": "fontFamily",
+    "$value": "Manrope",
+    "$description": "Heading family."
+  },
+  "fontfamily-caption": {
+    "$type": "fontFamily",
+    "$value": "Figtree",
+    "$description": "Caption family."
+  },
+  "fontfamily-label": {
+    "$type": "fontFamily",
+    "$value": "Figtree",
+    "$description": "Label family."
+  },
+  "fontsize-2xs": {
+    "$type": "dimension",
+    "$value": {
+      "value": 8,
+      "unit": "px"
+    },
+    "$description": "Below the Material scale — inherited. Fixed across breakpoints."
+  },
+  "fontsize-xs": {
+    "$type": "dimension",
+    "$value": {
+      "value": 11,
+      "unit": "px"
+    },
+    "$description": "Material label-small (11). Fixed across breakpoints."
+  },
+  "fontsize-sm": {
+    "$type": "dimension",
+    "$value": {
+      "value": 12,
+      "unit": "px"
+    },
+    "$description": "Material body-small / label-medium (12). Fixed — body text never shrinks."
+  },
+  "fontsize-md": {
+    "$type": "dimension",
+    "$value": {
+      "value": 14,
+      "unit": "px"
+    },
+    "$description": "Material body-medium / label-large / title-small (14). Fixed."
+  },
+  "fontsize-lg": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    },
+    "$description": "Material body-large / title-medium (16). Fixed."
+  },
+  "fontsize-xl": {
+    "$type": "dimension",
+    "$value": {
+      "value": 20,
+      "unit": "px"
+    },
+    "$description": "Compact keeps 20; Medium = title-large (22); Expanded = headline-small (24)."
+  },
+  "fontsize-2xl": {
+    "$type": "dimension",
+    "$value": {
+      "value": 24,
+      "unit": "px"
+    },
+    "$description": "headline-small (24) → headline-medium (28) → headline-large (32)."
+  },
+  "fontsize-3xl": {
+    "$type": "dimension",
+    "$value": {
+      "value": 32,
+      "unit": "px"
+    },
+    "$description": "headline-large (32) → display-small (36) → display-medium (45)."
+  },
+  "fontsize-jumbo": {
+    "$type": "dimension",
+    "$value": {
+      "value": 45,
+      "unit": "px"
+    },
+    "$description": "display-medium (45) → display-large (57) → 64, above the Material maximum."
+  },
+  "lineheight-2xs": {
+    "$type": "dimension",
+    "$value": {
+      "value": 12,
+      "unit": "px"
+    },
+    "$description": "Paired with fontSize/2xs on Material’s size-to-line-height ratios."
+  },
+  "lineheight-xs": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    },
+    "$description": "Paired with fontSize/xs on Material’s size-to-line-height ratios."
+  },
+  "lineheight-sm": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    },
+    "$description": "Paired with fontSize/sm on Material’s size-to-line-height ratios."
+  },
+  "lineheight-md": {
+    "$type": "dimension",
+    "$value": {
+      "value": 20,
+      "unit": "px"
+    },
+    "$description": "Paired with fontSize/md on Material’s size-to-line-height ratios."
+  },
+  "lineheight-lg": {
+    "$type": "dimension",
+    "$value": {
+      "value": 24,
+      "unit": "px"
+    },
+    "$description": "Paired with fontSize/lg on Material’s size-to-line-height ratios."
+  },
+  "lineheight-xl": {
+    "$type": "dimension",
+    "$value": {
+      "value": 28,
+      "unit": "px"
+    },
+    "$description": "Paired with fontSize/xl on Material’s size-to-line-height ratios."
+  },
+  "lineheight-2xl": {
+    "$type": "dimension",
+    "$value": {
+      "value": 32,
+      "unit": "px"
+    },
+    "$description": "Paired with fontSize/2xl on Material’s size-to-line-height ratios."
+  },
+  "lineheight-3xl": {
+    "$type": "dimension",
+    "$value": {
+      "value": 40,
+      "unit": "px"
+    },
+    "$description": "Paired with fontSize/3xl on Material’s size-to-line-height ratios."
+  },
+  "lineheight-jumbo": {
+    "$type": "dimension",
+    "$value": {
+      "value": 52,
+      "unit": "px"
+    },
+    "$description": "Paired with fontSize/jumbo on Material’s size-to-line-height ratios."
+  }
+}

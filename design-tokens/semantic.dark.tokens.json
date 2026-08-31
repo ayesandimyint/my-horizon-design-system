@@ -1,0 +1,442 @@
+{
+  "color-bg-base": {
+    "$type": "color",
+    "$value": "{color-neutral-1000}",
+    "$description": "The page behind everything."
+  },
+  "color-bg-inverse": {
+    "$type": "color",
+    "$value": "{color-neutral-50}",
+    "$description": "Tooltips, toasts, dark bars."
+  },
+  "color-bg-surfaceprimary": {
+    "$type": "color",
+    "$value": "{color-neutral-900}",
+    "$description": "Cards, sheets, modals, table rows."
+  },
+  "color-bg-surfacesecondary": {
+    "$type": "color",
+    "$value": "{color-neutral-800}",
+    "$description": "Wells, empty states, code blocks."
+  },
+  "color-bg-overlay": {
+    "$type": "color",
+    "$value": "{color-neutral-400a}",
+    "$description": "Scrim behind modals."
+  },
+  "color-bg-disabled": {
+    "$type": "color",
+    "$value": "{color-neutral-800}",
+    "$description": "Disabled control fill. Pairs with text/disabled."
+  },
+  "color-text-primary": {
+    "$type": "color",
+    "$value": "{color-neutral-0}",
+    "$description": "Body copy."
+  },
+  "color-text-secondary": {
+    "$type": "color",
+    "$value": "{color-neutral-400}",
+    "$description": "Secondary copy, meta, captions."
+  },
+  "color-text-bold": {
+    "$type": "color",
+    "$value": "{color-neutral-0}",
+    "$description": "Headings and emphasis."
+  },
+  "color-text-disabled": {
+    "$type": "color",
+    "$value": "{color-neutral-600}",
+    "$description": "Disabled labels only. Never carries meaning."
+  },
+  "color-text-inverse": {
+    "$type": "color",
+    "$value": "{color-neutral-1000}",
+    "$description": "Text on bold fills and bg/inverse."
+  },
+  "color-text-inversesecondary": {
+    "$type": "color",
+    "$value": "{color-neutral-900}",
+    "$description": "Secondary text on bold fills."
+  },
+  "color-text-disabledondark": {
+    "$type": "color",
+    "$value": "{color-neutral-800}",
+    "$description": "Disabled label on a dark surface."
+  },
+  "color-text-brand": {
+    "$type": "color",
+    "$value": "{color-blue-300}",
+    "$description": "Brand copy and links. Horizon blue."
+  },
+  "color-text-negative": {
+    "$type": "color",
+    "$value": "{color-red-200}",
+    "$description": "Errors, destructive copy."
+  },
+  "color-text-positive": {
+    "$type": "color",
+    "$value": "{color-green-200}",
+    "$description": "Confirmation copy."
+  },
+  "color-text-warning": {
+    "$type": "color",
+    "$value": "{color-orange-800}",
+    "$description": "Caution copy."
+  },
+  "color-text-info": {
+    "$type": "color",
+    "$value": "{color-aqua-800}",
+    "$description": "Informational copy. Aqua, not blue — blue is the brand."
+  },
+  "color-text-update": {
+    "$type": "color",
+    "$value": "{color-yellow-800}",
+    "$description": "Update / new copy."
+  },
+  "color-icon-primary": {
+    "$type": "color",
+    "$value": "{color-neutral-800}",
+    "$description": "Default icon."
+  },
+  "color-icon-secondary": {
+    "$type": "color",
+    "$value": "{color-neutral-600}",
+    "$description": "Low-emphasis icon."
+  },
+  "color-icon-bold": {
+    "$type": "color",
+    "$value": "{color-neutral-1000}",
+    "$description": "Emphasised icon."
+  },
+  "color-icon-disabled": {
+    "$type": "color",
+    "$value": "{color-neutral-400}",
+    "$description": "Disabled icon."
+  },
+  "color-icon-inverse": {
+    "$type": "color",
+    "$value": "{color-neutral-0}",
+    "$description": "Icon on bold fills."
+  },
+  "color-icon-inversesecondary": {
+    "$type": "color",
+    "$value": "{color-neutral-50}",
+    "$description": "Secondary icon on bold fills."
+  },
+  "color-icon-disabledondark": {
+    "$type": "color",
+    "$value": "{color-neutral-200}",
+    "$description": "Disabled icon on a dark surface."
+  },
+  "color-icon-brand": {
+    "$type": "color",
+    "$value": "{color-blue-600}",
+    "$description": "Brand icon. Horizon blue."
+  },
+  "color-icon-negative": {
+    "$type": "color",
+    "$value": "{color-red-600}",
+    "$description": "Error icon."
+  },
+  "color-icon-positive": {
+    "$type": "color",
+    "$value": "{color-green-600}",
+    "$description": "Success icon."
+  },
+  "color-icon-warning": {
+    "$type": "color",
+    "$value": "{color-orange-600}",
+    "$description": "Warning icon."
+  },
+  "color-icon-info": {
+    "$type": "color",
+    "$value": "{color-aqua-600}",
+    "$description": "Informational icon. Aqua, not blue."
+  },
+  "color-icon-update": {
+    "$type": "color",
+    "$value": "{color-yellow-600}",
+    "$description": "Update icon."
+  },
+  "color-border-primary": {
+    "$type": "color",
+    "$value": "{color-neutral-300}",
+    "$description": "Cards, table dividers, the default line."
+  },
+  "color-border-secondary": {
+    "$type": "color",
+    "$value": "{color-neutral-400}",
+    "$description": "Emphasised container edges."
+  },
+  "color-border-inverse": {
+    "$type": "color",
+    "$value": "{color-neutral-1000}",
+    "$description": "Border on bg/inverse."
+  },
+  "color-bg-primary-light": {
+    "$type": "color",
+    "$value": "{color-blue-900}",
+    "$description": "Low-emphasis brand fill."
+  },
+  "color-bg-primary-idle": {
+    "$type": "color",
+    "$value": "{color-blue-300}",
+    "$description": "Primary button at rest. Horizon logo blue."
+  },
+  "color-bg-primary-hovered": {
+    "$type": "color",
+    "$value": "{color-blue-700}",
+    "$description": "Primary button hover."
+  },
+  "color-bg-primary-focused": {
+    "$type": "color",
+    "$value": "{color-blue-400}",
+    "$description": "Primary button focused."
+  },
+  "color-bg-primary-neutral-idle": {
+    "$type": "color",
+    "$value": "{color-neutral-0}",
+    "$description": "Neutral (inverse) button at rest."
+  },
+  "color-bg-primary-neutral-hovered": {
+    "$type": "color",
+    "$value": "{color-neutral-50}",
+    "$description": "Neutral button hover."
+  },
+  "color-bg-primary-neutral-focused": {
+    "$type": "color",
+    "$value": "{color-neutral-100}",
+    "$description": "Neutral button focused."
+  },
+  "color-bg-negative-light": {
+    "$type": "color",
+    "$value": "{color-red-1000}",
+    "$description": "Errors, failed payment, destructive actions."
+  },
+  "color-bg-negative-idle": {
+    "$type": "color",
+    "$value": "{color-red-400}",
+    "$description": "Errors, failed payment, destructive actions."
+  },
+  "color-bg-negative-hovered": {
+    "$type": "color",
+    "$value": "{color-red-800}",
+    "$description": "Errors, failed payment, destructive actions."
+  },
+  "color-bg-negative-focused": {
+    "$type": "color",
+    "$value": "{color-red-700}",
+    "$description": "Errors, failed payment, destructive actions."
+  },
+  "color-bg-positive-light": {
+    "$type": "color",
+    "$value": "{color-green-100}",
+    "$description": "Booking confirmed, payment taken, saved."
+  },
+  "color-bg-positive-idle": {
+    "$type": "color",
+    "$value": "{color-green-600}",
+    "$description": "Booking confirmed, payment taken, saved."
+  },
+  "color-bg-positive-hovered": {
+    "$type": "color",
+    "$value": "{color-green-500}",
+    "$description": "Booking confirmed, payment taken, saved."
+  },
+  "color-bg-positive-focused": {
+    "$type": "color",
+    "$value": "{color-green-500}",
+    "$description": "Booking confirmed, payment taken, saved."
+  },
+  "color-bg-warning-light": {
+    "$type": "color",
+    "$value": "{color-orange-100}",
+    "$description": "Needs attention — expiring, low availability."
+  },
+  "color-bg-warning-idle": {
+    "$type": "color",
+    "$value": "{color-orange-600}",
+    "$description": "Needs attention — expiring, low availability."
+  },
+  "color-bg-warning-hovered": {
+    "$type": "color",
+    "$value": "{color-orange-500}",
+    "$description": "Needs attention — expiring, low availability."
+  },
+  "color-bg-warning-focused": {
+    "$type": "color",
+    "$value": "{color-orange-500}",
+    "$description": "Needs attention — expiring, low availability."
+  },
+  "color-bg-info-light": {
+    "$type": "color",
+    "$value": "{color-aqua-100}",
+    "$description": "Neutral system messages and tips. Aqua, not blue — blue is the brand."
+  },
+  "color-bg-info-idle": {
+    "$type": "color",
+    "$value": "{color-aqua-600}",
+    "$description": "Neutral system messages and tips. Aqua, not blue — blue is the brand."
+  },
+  "color-bg-info-hovered": {
+    "$type": "color",
+    "$value": "{color-aqua-500}",
+    "$description": "Neutral system messages and tips. Aqua, not blue — blue is the brand."
+  },
+  "color-bg-info-focused": {
+    "$type": "color",
+    "$value": "{color-aqua-500}",
+    "$description": "Neutral system messages and tips. Aqua, not blue — blue is the brand."
+  },
+  "color-bg-update-light": {
+    "$type": "color",
+    "$value": "{color-yellow-100}",
+    "$description": "New, beta, changed."
+  },
+  "color-bg-update-idle": {
+    "$type": "color",
+    "$value": "{color-yellow-600}",
+    "$description": "New, beta, changed."
+  },
+  "color-bg-update-hovered": {
+    "$type": "color",
+    "$value": "{color-yellow-500}",
+    "$description": "New, beta, changed."
+  },
+  "color-bg-update-focused": {
+    "$type": "color",
+    "$value": "{color-yellow-500}",
+    "$description": "New, beta, changed."
+  },
+  "color-bg-accent-purple": {
+    "$type": "color",
+    "$value": "{color-purple-100}",
+    "$description": "Decorative purple fill — avatars, category chips, chart series. Never a status."
+  },
+  "color-bg-accent-blue": {
+    "$type": "color",
+    "$value": "{color-blue-100}",
+    "$description": "Decorative blue fill — avatars, category chips, chart series. Never a status."
+  },
+  "color-bg-accent-aqua": {
+    "$type": "color",
+    "$value": "{color-aqua-100}",
+    "$description": "Decorative aqua fill — avatars, category chips, chart series. Never a status."
+  },
+  "color-bg-accent-mint": {
+    "$type": "color",
+    "$value": "{color-mint-100}",
+    "$description": "Decorative mint fill — avatars, category chips, chart series. Never a status."
+  },
+  "color-bg-accent-yellow": {
+    "$type": "color",
+    "$value": "{color-yellow-100}",
+    "$description": "Decorative yellow fill — avatars, category chips, chart series. Never a status."
+  },
+  "color-bg-accent-orange": {
+    "$type": "color",
+    "$value": "{color-orange-100}",
+    "$description": "Decorative orange fill — avatars, category chips, chart series. Never a status."
+  },
+  "color-bg-accent-red": {
+    "$type": "color",
+    "$value": "{color-red-100}",
+    "$description": "Decorative red fill — avatars, category chips, chart series. Never a status."
+  },
+  "color-bg-accent-pink": {
+    "$type": "color",
+    "$value": "{color-pink-100}",
+    "$description": "Decorative pink fill — avatars, category chips, chart series. Never a status."
+  },
+  "color-border-brand-light": {
+    "$type": "color",
+    "$value": "{color-blue-300}",
+    "$description": "brand edge, low emphasis."
+  },
+  "color-border-brand-default": {
+    "$type": "color",
+    "$value": "{color-blue-400}",
+    "$description": "brand edge, default."
+  },
+  "color-border-brand-bold": {
+    "$type": "color",
+    "$value": "{color-blue-500}",
+    "$description": "brand edge, bold."
+  },
+  "color-border-negative-light": {
+    "$type": "color",
+    "$value": "{color-red-300}",
+    "$description": "negative edge, low emphasis."
+  },
+  "color-border-negative-default": {
+    "$type": "color",
+    "$value": "{color-red-400}",
+    "$description": "negative edge, default."
+  },
+  "color-border-negative-bold": {
+    "$type": "color",
+    "$value": "{color-red-500}",
+    "$description": "negative edge, bold."
+  },
+  "color-border-positive-light": {
+    "$type": "color",
+    "$value": "{color-green-300}",
+    "$description": "positive edge, low emphasis."
+  },
+  "color-border-positive-default": {
+    "$type": "color",
+    "$value": "{color-green-400}",
+    "$description": "positive edge, default."
+  },
+  "color-border-positive-bold": {
+    "$type": "color",
+    "$value": "{color-green-500}",
+    "$description": "positive edge, bold."
+  },
+  "color-border-warning-light": {
+    "$type": "color",
+    "$value": "{color-orange-300}",
+    "$description": "warning edge, low emphasis."
+  },
+  "color-border-warning-default": {
+    "$type": "color",
+    "$value": "{color-orange-400}",
+    "$description": "warning edge, default."
+  },
+  "color-border-warning-bold": {
+    "$type": "color",
+    "$value": "{color-orange-500}",
+    "$description": "warning edge, bold."
+  },
+  "color-border-info-light": {
+    "$type": "color",
+    "$value": "{color-aqua-300}",
+    "$description": "info edge, low emphasis."
+  },
+  "color-border-info-default": {
+    "$type": "color",
+    "$value": "{color-aqua-400}",
+    "$description": "info edge, default."
+  },
+  "color-border-info-bold": {
+    "$type": "color",
+    "$value": "{color-aqua-500}",
+    "$description": "info edge, bold."
+  },
+  "color-border-update-light": {
+    "$type": "color",
+    "$value": "{color-yellow-300}",
+    "$description": "update edge, low emphasis."
+  },
+  "color-border-update-default": {
+    "$type": "color",
+    "$value": "{color-yellow-400}",
+    "$description": "update edge, default."
+  },
+  "color-border-update-bold": {
+    "$type": "color",
+    "$value": "{color-yellow-500}",
+    "$description": "update edge, bold."
+  }
+}
