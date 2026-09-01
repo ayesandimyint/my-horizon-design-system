@@ -17,24 +17,7 @@
           "semantic.dark.tokens.json"
         ]
       }
-    },
-    "typography": {
-      "modes": {
-        "mobile": [
-          "typography.mobile.tokens.json"
-        ],
-        "web": [
-          "typography.web.tokens.json"
-        ],
-        "backoffice": [
-          "typography.backoffice.tokens.json"
-        ]
-      }
     }
   },
-  "styles": {
-    "typography": [
-      "typography.styles.tokens.json"
-    ]
-  }
+  "styles": {}
 }
