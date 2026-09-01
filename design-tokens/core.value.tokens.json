@@ -1,16 +1,16 @@
 {
-  "color-aqua-100": {
-    "$type": "color",
-    "$value": {
-      "colorSpace": "srgb",
-      "components": [
-        0.8901960849761963,
-        0.9803921580314636,
-        0.9882352948188782
-      ]
-    },
-    "$description": "aqua 100"
+ "color-aqua-100": {
+  "$type": "color",
+  "$value": {
+    "colorSpace": "srgb",
+    "components": [
+      0.8901960849761963,
+      0.9803921580314636,
+      0.9882352948188782
+    ]
   },
+  "$description": "aqua 100 - light background"
+},
   "color-aqua-200": {
     "$type": "color",
     "$value": {
@@ -184,9 +184,9 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.23137255012989044,
-        0.5098039507865906,
-        0.9647058844566345
+        1,
+        0.4941176474094391,
+        0.14509804546833038
       ]
     },
     "$description": "blue 600 — pure hue anchor"
