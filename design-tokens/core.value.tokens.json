@@ -1,16 +1,16 @@
 {
-  "color-aqua-100": {
-    "$type": "color",
-    "$value": {
-      "colorSpace": "srgb",
-      "components": [
-        0.8901960849761963,
-        0.9803921580314636,
-        0.9882352948188782
-      ]
-    },
-    "$description": "aqua 100"
+ "color-aqua-100": {
+  "$type": "color",
+  "$value": {
+    "colorSpace": "srgb",
+    "components": [
+      0.8901960849761963,
+      0.9803921580314636,
+      0.9882352948188782
+    ]
   },
+  "$description": "aqua 100 - light background"
+},
   "color-aqua-200": {
     "$type": "color",
     "$value": {
