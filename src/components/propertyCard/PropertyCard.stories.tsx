@@ -16,14 +16,6 @@ const defaultArgs = {
   imageUrl:
     'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=450&h=350&fit=crop',
   isFavorite: false,
-  showIcon: true,
-  showReviewTag: true,
-  showPrice: true,
-  showMetaData: true,
-  disabled: false,
-  orientation: 'horizontal',
-  ratio: '223:169',
-  state: 'default',
 };
 
 const meta = {
@@ -42,14 +34,6 @@ const meta = {
     currency: { control: 'text' },
     priceUnit: { control: 'text' },
     isFavorite: { control: 'boolean' },
-    showIcon: { control: 'boolean' },
-    showReviewTag: { control: 'boolean' },
-    showPrice: { control: 'boolean' },
-    showMetaData: { control: 'boolean' },
-    disabled: { control: 'boolean' },
-    orientation: { control: 'select', options: ['horizontal', 'vertical'] },
-    ratio: { control: 'select', options: ['3:2', '16:9', '223:169'] },
-    state: { control: 'select', options: ['default', 'hover', 'pressed', 'focus'] },
     onFavoriteClick: { action: 'favorite clicked' },
   },
 } satisfies Meta<typeof PropertyCard>;
@@ -103,40 +87,6 @@ export const Minimal: Story = {
   },
 };
 
-// ===== STATE VARIANTS =====
-export const Disabled: Story = {
-  args: { ...defaultArgs, disabled: true },
-};
-
-export const FavoritedDisabled: Story = {
-  args: { ...defaultArgs, isFavorite: true, disabled: true },
-};
-
-// ===== TOGGLE VARIANTS =====
-export const WithoutIcon: Story = {
-  args: { ...defaultArgs, showIcon: false },
-};
-
-export const WithoutReviewTag: Story = {
-  args: { ...defaultArgs, showReviewTag: false },
-};
-
-export const WithoutPrice: Story = {
-  args: { ...defaultArgs, showPrice: false },
-};
-
-export const WithoutMetaData: Story = {
-  args: { ...defaultArgs, showMetaData: false },
-};
-
-export const MinimalDisplay: Story = {
-  args: {
-    ...defaultArgs,
-    showIcon: false,
-    showReviewTag: false,
-    showPrice: false,
-  },
-};
 
 // ===== CONTENT VARIATIONS =====
 export const LongTitle: Story = {
@@ -181,24 +131,3 @@ export const NoReviews: Story = {
   },
 };
 
-// ===== RATIO VARIANTS =====
-export const Ratio3x2: Story = {
-  args: { ...defaultArgs, ratio: '3:2' },
-};
-
-export const Ratio16x9: Story = {
-  args: { ...defaultArgs, ratio: '16:9' },
-};
-
-// ===== STATE VARIANTS =====
-export const StateHover: Story = {
-  args: { ...defaultArgs, state: 'hover' },
-};
-
-export const StatePressed: Story = {
-  args: { ...defaultArgs, state: 'pressed' },
-};
-
-export const StateFocus: Story = {
-  args: { ...defaultArgs, state: 'focus' },
-};

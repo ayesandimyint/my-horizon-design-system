@@ -5,11 +5,6 @@
   width: 100%;
 }
 
-.property-card--disabled {
-  opacity: 0.6;
-  pointer-events: none;
-}
-
 .property-card__container {
   background-color: var(--color-bg-surfaceprimary);
   border-radius: var(--borderradius-sm);
@@ -37,18 +32,6 @@
   overflow: hidden;
 }
 
-/* Ratio variants */
-[data-ratio="3:2"] .property-card__image-wrapper {
-  aspect-ratio: 3 / 2;
-}
-
-[data-ratio="16:9"] .property-card__image-wrapper {
-  aspect-ratio: 16 / 9;
-}
-
-[data-ratio="223:169"] .property-card__image-wrapper {
-  aspect-ratio: 223 / 169;
-}
 
 .property-card__image {
   position: absolute;
@@ -108,22 +91,6 @@
   flex-shrink: 0;
 }
 
-/* State variants */
-[data-state="hover"] .property-card__container {
-  box-shadow: 0 4px 12px rgba(16, 31, 55, 0.12);
-  transform: translateY(-2px);
-  transition: all 0.2s ease;
-}
-
-[data-state="pressed"] .property-card__container {
-  box-shadow: 0 2px 6px rgba(16, 31, 55, 0.08);
-  transform: translateY(0);
-}
-
-[data-state="focus"] .property-card__container {
-  outline: 2px solid var(--color-icon-brand);
-  outline-offset: 2px;
-}
 
 /* Text Section */
 .property-card__text {
