@@ -32,6 +32,9 @@ interface PropertyCardProps {
   showPrice?: boolean;
   showMetaData?: boolean;
   disabled?: boolean;
+  orientation?: 'horizontal' | 'vertical';
+  ratio?: '3:2' | '16:9' | '223:169';
+  state?: 'default' | 'hover' | 'pressed' | 'focus';
 }
 
 export const PropertyCard: React.FC<PropertyCardProps> = ({
@@ -51,9 +54,17 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
   showPrice = true,
   showMetaData = true,
   disabled = false,
+  orientation = 'horizontal',
+  ratio = '223:169',
+  state = 'default',
 }) => {
   return (
-    <div className={`property-card ${disabled ? 'property-card--disabled' : ''} ${className || ''}`}>
+    <div
+      className={`property-card ${disabled ? 'property-card--disabled' : ''} ${className || ''}`}
+      data-orientation={orientation}
+      data-state={state}
+      data-ratio={ratio}
+    >
       <div className="property-card__container">
         <div className="property-card__content">
           {/* Image Section */}

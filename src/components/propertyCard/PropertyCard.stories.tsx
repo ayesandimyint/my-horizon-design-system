@@ -21,6 +21,9 @@ const defaultArgs = {
   showPrice: true,
   showMetaData: true,
   disabled: false,
+  orientation: 'horizontal',
+  ratio: '223:169',
+  state: 'default',
 };
 
 const meta = {
@@ -44,6 +47,9 @@ const meta = {
     showPrice: { control: 'boolean' },
     showMetaData: { control: 'boolean' },
     disabled: { control: 'boolean' },
+    orientation: { control: 'select', options: ['horizontal', 'vertical'] },
+    ratio: { control: 'select', options: ['3:2', '16:9', '223:169'] },
+    state: { control: 'select', options: ['default', 'hover', 'pressed', 'focus'] },
     onFavoriteClick: { action: 'favorite clicked' },
   },
 } satisfies Meta<typeof PropertyCard>;
@@ -173,4 +179,26 @@ export const NoReviews: Story = {
     rating: 0,
     reviewCount: 0,
   },
+};
+
+// ===== RATIO VARIANTS =====
+export const Ratio3x2: Story = {
+  args: { ...defaultArgs, ratio: '3:2' },
+};
+
+export const Ratio16x9: Story = {
+  args: { ...defaultArgs, ratio: '16:9' },
+};
+
+// ===== STATE VARIANTS =====
+export const StateHover: Story = {
+  args: { ...defaultArgs, state: 'hover' },
+};
+
+export const StatePressed: Story = {
+  args: { ...defaultArgs, state: 'pressed' },
+};
+
+export const StateFocus: Story = {
+  args: { ...defaultArgs, state: 'focus' },
 };
