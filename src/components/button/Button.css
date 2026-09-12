@@ -1,0 +1,73 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease;
+  white-space: nowrap;
+}
+
+/* Primary Variant */
+.button--primary {
+  background-color: var(--color-bg-primary-idle);
+  color: var(--color-text-inverse);
+}
+
+.button--primary:hover {
+  background-color: var(--color-bg-primary-hovered);
+}
+
+.button--primary.button--pressed {
+  background-color: var(--color-bg-primary-hovered);
+}
+
+.button--primary.button--focused {
+  background-color: var(--color-bg-primary-idle);
+  border: 2px solid var(--color-border-brand-bold);
+  padding: calc(12px - 2px) calc(20px - 2px);
+}
+
+.button--primary.button--disabled {
+  background-color: var(--color-bg-disabled);
+  color: var(--color-text-disabled);
+  cursor: not-allowed;
+}
+
+/* Secondary Variant */
+.button--secondary {
+  background-color: var(--color-bg-primary-light);
+  color: var(--color-text-brand);
+}
+
+.button--secondary:hover {
+  background-color: var(--color-bg-base);
+}
+
+.button--secondary.button--pressed {
+  background-color: var(--color-bg-primary-hovered);
+}
+
+.button--secondary.button--focused {
+  background-color: var(--color-bg-primary-light);
+  border: 2px solid var(--color-border-brand-bold);
+  padding: calc(12px - 2px) calc(20px - 2px);
+  color: var(--color-text-brand);
+}
+
+.button--secondary.button--disabled {
+  background-color: var(--color-bg-disabled);
+  color: var(--color-text-disabled);
+  cursor: not-allowed;
+}
+
+/* Disabled state */
+.button--disabled {
+  cursor: not-allowed;
+}
