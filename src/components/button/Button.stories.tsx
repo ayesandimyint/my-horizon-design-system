@@ -1,4 +1,5 @@
-import React from 'react';
+// Figma: https://www.figma.com/design/e1O2ke1lc0CpM6GhYKyr3o/%F0%9F%A7%8A-Horizon-.-Web-.-Components-.-Draft-.?node-id=36-2&t=sMWbnfr6TH4s7ZKE-1
+
 import { Button } from './Button';
 
 export default {
@@ -25,9 +26,9 @@ export default {
   },
 };
 
-const Template = (args) => <Button {...args} />;
+const Template = (args: any) => <Button {...args} />;
 
-export const Primary = Template.bind({});
+export const Primary = Template.bind({}) as any;
 Primary.args = {
   label: 'Button',
   variant: 'primary',
@@ -35,7 +36,7 @@ Primary.args = {
 };
 Primary.storyName = 'Primary / Default';
 
-export const PrimaryHovered = Template.bind({});
+export const PrimaryHovered = Template.bind({}) as any;
 PrimaryHovered.args = {
   label: 'Button',
   variant: 'primary',
@@ -43,7 +44,7 @@ PrimaryHovered.args = {
 };
 PrimaryHovered.storyName = 'Primary / Hovered';
 
-export const PrimaryPressed = Template.bind({});
+export const PrimaryPressed = Template.bind({}) as any;
 PrimaryPressed.args = {
   label: 'Button',
   variant: 'primary',
@@ -51,7 +52,7 @@ PrimaryPressed.args = {
 };
 PrimaryPressed.storyName = 'Primary / Pressed';
 
-export const PrimaryFocused = Template.bind({});
+export const PrimaryFocused = Template.bind({}) as any;
 PrimaryFocused.args = {
   label: 'Button',
   variant: 'primary',
@@ -59,7 +60,7 @@ PrimaryFocused.args = {
 };
 PrimaryFocused.storyName = 'Primary / Focused';
 
-export const PrimaryDisabled = Template.bind({});
+export const PrimaryDisabled = Template.bind({}) as any;
 PrimaryDisabled.args = {
   label: 'Button',
   variant: 'primary',
@@ -67,7 +68,7 @@ PrimaryDisabled.args = {
 };
 PrimaryDisabled.storyName = 'Primary / Disabled';
 
-export const Secondary = Template.bind({});
+export const Secondary = Template.bind({}) as any;
 Secondary.args = {
   label: 'Button',
   variant: 'secondary',
@@ -75,7 +76,7 @@ Secondary.args = {
 };
 Secondary.storyName = 'Secondary / Default';
 
-export const SecondaryHovered = Template.bind({});
+export const SecondaryHovered = Template.bind({}) as any;
 SecondaryHovered.args = {
   label: 'Button',
   variant: 'secondary',
@@ -83,7 +84,7 @@ SecondaryHovered.args = {
 };
 SecondaryHovered.storyName = 'Secondary / Hovered';
 
-export const SecondaryPressed = Template.bind({});
+export const SecondaryPressed = Template.bind({}) as any;
 SecondaryPressed.args = {
   label: 'Button',
   variant: 'secondary',
@@ -91,7 +92,7 @@ SecondaryPressed.args = {
 };
 SecondaryPressed.storyName = 'Secondary / Pressed';
 
-export const SecondaryFocused = Template.bind({});
+export const SecondaryFocused = Template.bind({}) as any;
 SecondaryFocused.args = {
   label: 'Button',
   variant: 'secondary',
@@ -99,7 +100,7 @@ SecondaryFocused.args = {
 };
 SecondaryFocused.storyName = 'Secondary / Focused';
 
-export const SecondaryDisabled = Template.bind({});
+export const SecondaryDisabled = Template.bind({}) as any;
 SecondaryDisabled.args = {
   label: 'Button',
   variant: 'secondary',
