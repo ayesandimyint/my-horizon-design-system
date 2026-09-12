@@ -2,13 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: 12px 20px;
   border-radius: var(--borderradius-sm);
   border: none;
-  font-family: var(--fontfamily-body);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: var(--fontsize-lg);
   font-weight: 500;
-  line-height: var(--lineheight-lg);
+  line-height: normal;
   cursor: pointer;
   transition: background-color 150ms ease, border-color 150ms ease;
   white-space: nowrap;
