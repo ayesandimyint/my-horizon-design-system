@@ -1,3 +1,5 @@
+// Figma: https://www.figma.com/design/e1O2ke1lc0CpM6GhYKyr3o/%F0%9F%A7%8A-Horizon-.-Web-.-Components-.-Draft-.?node-id=39-84&t=sMWbnfr6TH4s7ZKE-1
+
 import { Badge } from './Badge';
 
 export default {

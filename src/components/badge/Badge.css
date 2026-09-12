@@ -1,5 +1,5 @@
 .badge {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--fontfamily-body);
   display: flex;
   align-items: center;
   gap: 6px;
@@ -76,9 +76,9 @@
 }
 
 .badge__label--dottext {
-  font-size: 13px;
+  font-size: var(--fontsize-sm);
   font-weight: 500;
-  line-height: normal;
+  line-height: var(--lineheight-sm);
   white-space: nowrap;
 }
 
@@ -141,9 +141,9 @@
 }
 
 .badge__label--text {
-  font-size: 12px;
+  font-size: var(--fontsize-sm);
   font-weight: 500;
-  line-height: normal;
+  line-height: var(--lineheight-sm);
 }
 
 .badge__label--text.text-positive {
