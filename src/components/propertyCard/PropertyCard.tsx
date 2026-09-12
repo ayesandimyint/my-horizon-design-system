@@ -27,6 +27,11 @@ interface PropertyCardProps {
   isFavorite?: boolean;
   onFavoriteClick?: () => void;
   className?: string;
+  showIcon?: boolean;
+  showReviewTag?: boolean;
+  showPrice?: boolean;
+  showMetaData?: boolean;
+  disabled?: boolean;
 }
 
 export const PropertyCard: React.FC<PropertyCardProps> = ({
@@ -41,9 +46,14 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
   isFavorite = false,
   onFavoriteClick,
   className,
+  showIcon = true,
+  showReviewTag = true,
+  showPrice = true,
+  showMetaData = true,
+  disabled = false,
 }) => {
   return (
-    <div className={`property-card ${className || ''}`}>
+    <div className={`property-card ${disabled ? 'property-card--disabled' : ''} ${className || ''}`}>
       <div className="property-card__container">
         <div className="property-card__content">
           {/* Image Section */}
@@ -56,21 +66,24 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
               />
             )}
             <div className="property-card__overlay" />
-            <button
-              className="property-card__favorite-btn"
-              onClick={onFavoriteClick}
-              aria-label={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
-            >
-              {isFavorite ? (
-                <img
-                  src={imgHeartFilled}
-                  alt=""
-                  className="property-card__heart-icon"
-                />
-              ) : (
-                <HeartOutline />
-              )}
-            </button>
+            {showIcon && (
+              <button
+                className="property-card__favorite-btn"
+                onClick={onFavoriteClick}
+                disabled={disabled}
+                aria-label={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+              >
+                {isFavorite ? (
+                  <img
+                    src={imgHeartFilled}
+                    alt=""
+                    className="property-card__heart-icon"
+                  />
+                ) : (
+                  <HeartOutline />
+                )}
+              </button>
+            )}
           </div>
 
           {/* Text Section */}
@@ -82,18 +95,24 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
             </div>
 
             {/* Rating and Price */}
-            <div className="property-card__footer">
-              <div className="property-card__rating">
-                <span className="property-card__rating-value">{rating}</span>
-                <span className="property-card__review-count">({reviewCount} reviews)</span>
+            {showMetaData && (
+              <div className="property-card__footer">
+                {showReviewTag && (
+                  <div className="property-card__rating">
+                    <span className="property-card__rating-value">{rating}</span>
+                    <span className="property-card__review-count">({reviewCount} reviews)</span>
+                  </div>
+                )}
+                {showPrice && (
+                  <div className="property-card__price">
+                    <span className="property-card__price-amount">
+                      {price} {currency}
+                    </span>
+                    <span className="property-card__price-unit">{priceUnit}</span>
+                  </div>
+                )}
               </div>
-              <div className="property-card__price">
-                <span className="property-card__price-amount">
-                  {price} {currency}
-                </span>
-                <span className="property-card__price-unit">{priceUnit}</span>
-              </div>
-            </div>
+            )}
           </div>
         </div>
       </div>

@@ -5,6 +5,11 @@
   width: 100%;
 }
 
+.property-card--disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
 .property-card__container {
   background-color: var(--color-bg-surfaceprimary);
   border-radius: var(--borderradius-sm);
