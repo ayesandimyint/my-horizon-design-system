@@ -1,6 +1,20 @@
 import React from 'react';
 import './PropertyCard.css';
 
+const imgHeartFilled = 'https://www.figma.com/api/mcp/asset/b1fe3b59-7c5c-4c01-9504-3b63b37cba13.svg';
+
+const HeartOutline = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+  </svg>
+);
+
 interface PropertyCardProps {
   title?: string;
   location?: string;
@@ -47,14 +61,15 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
               onClick={onFavoriteClick}
               aria-label={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
             >
-              <svg
-                className="property-card__heart-icon"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-              </svg>
+              {isFavorite ? (
+                <img
+                  src={imgHeartFilled}
+                  alt=""
+                  className="property-card__heart-icon"
+                />
+              ) : (
+                <HeartOutline />
+              )}
             </button>
           </div>
 
@@ -74,7 +89,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
               </div>
               <div className="property-card__price">
                 <span className="property-card__price-amount">
-                  {currency} {price}
+                  {price} {currency}
                 </span>
                 <span className="property-card__price-unit">{priceUnit}</span>
               </div>

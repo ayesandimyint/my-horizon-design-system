@@ -1,0 +1,90 @@
+[data-theme="dark"] {
+  --color-bg-base: #101f37; /** The page behind everything. */
+  --color-bg-inverse: #f5f6f7; /** Tooltips, toasts, dark bars. */
+  --color-bg-surfaceprimary: #1c2a41; /** Cards, sheets, modals, table rows. */
+  --color-bg-surfacesecondary: #2a384d; /** Wells, empty states, code blocks. */
+  --color-bg-overlay: rgba(16, 31, 55, 0.31); /** Scrim behind modals. */
+  --color-bg-disabled: #2a384d; /** Disabled control fill. Pairs with text/disabled. */
+  --color-text-primary: #ffffff; /** Body copy. */
+  --color-text-secondary: #b5bac1; /** Secondary copy, meta, captions. */
+  --color-text-bold: #ffffff; /** Headings and emphasis. */
+  --color-text-disabled: #707987; /** Disabled labels only. Never carries meaning. */
+  --color-text-inverse: #101f37; /** Text on bold fills and bg/inverse. */
+  --color-text-inversesecondary: #1c2a41; /** Secondary text on bold fills. */
+  --color-text-disabledondark: #2a384d; /** Disabled label on a dark surface. */
+  --color-text-brand: #a5c6fb; /** Brand copy and links. Horizon blue. */
+  --color-text-negative: #febbbb; /** Errors, destructive copy. */
+  --color-text-positive: #bce4c5; /** Confirmation copy. */
+  --color-text-warning: #b5591a; /** Caution copy. */
+  --color-text-info: #1596a7; /** Informational copy. Aqua, not blue — blue is the brand. */
+  --color-text-update: #b18c10; /** Update / new copy. */
+  --color-icon-primary: #2a384d; /** Default icon. */
+  --color-icon-secondary: #707987; /** Low-emphasis icon. */
+  --color-icon-bold: #101f37; /** Emphasised icon. */
+  --color-icon-disabled: #b5bac1; /** Disabled icon. */
+  --color-icon-inverse: #ffffff; /** Icon on bold fills. */
+  --color-icon-inversesecondary: #f5f6f7; /** Secondary icon on bold fills. */
+  --color-icon-disabledondark: #e0e2e5; /** Disabled icon on a dark surface. */
+  --color-icon-brand: #3b82f6; /** Brand icon. Horizon blue. */
+  --color-icon-negative: #fc2525; /** Error icon. */
+  --color-icon-positive: #28a745; /** Success icon. */
+  --color-icon-warning: #ff7e25; /** Warning icon. */
+  --color-icon-info: #1ed3eb; /** Informational icon. Aqua, not blue. */
+  --color-icon-update: #f9c517; /** Update icon. */
+  --color-border-primary: #c3c7cd; /** Cards, table dividers, the default line. */
+  --color-border-secondary: #b5bac1; /** Emphasised container edges. */
+  --color-border-inverse: #101f37; /** Border on bg/inverse. */
+  --color-bg-primary-light: #214888; /** Low-emphasis brand fill. */
+  --color-bg-primary-idle: #a5c6fb; /** Primary button at rest. Horizon logo blue. */
+  --color-bg-primary-hovered: #3677e0; /** Primary button hover. */
+  --color-bg-primary-focused: #7cabf9; /** Primary button focused. */
+  --color-bg-primary-neutral-idle: #ffffff; /** Neutral (inverse) button at rest. */
+  --color-bg-primary-neutral-hovered: #f5f6f7; /** Neutral button hover. */
+  --color-bg-primary-neutral-focused: #ecedef; /** Neutral button focused. */
+  --color-bg-negative-light: #6a1010; /** Errors, failed payment, destructive actions. */
+  --color-bg-negative-idle: #fd6d6d; /** Errors, failed payment, destructive actions. */
+  --color-bg-negative-hovered: #b31a1a; /** Errors, failed payment, destructive actions. */
+  --color-bg-negative-focused: #e52222; /** Errors, failed payment, destructive actions. */
+  --color-bg-positive-light: #eaf6ec; /** Booking confirmed, payment taken, saved. */
+  --color-bg-positive-idle: #28a745; /** Booking confirmed, payment taken, saved. */
+  --color-bg-positive-hovered: #53b96a; /** Booking confirmed, payment taken, saved. */
+  --color-bg-positive-focused: #53b96a; /** Booking confirmed, payment taken, saved. */
+  --color-bg-warning-light: #fff2e9; /** Needs attention — expiring, low availability. */
+  --color-bg-warning-idle: #ff7e25; /** Needs attention — expiring, low availability. */
+  --color-bg-warning-hovered: #ff9851; /** Needs attention — expiring, low availability. */
+  --color-bg-warning-focused: #ff9851; /** Needs attention — expiring, low availability. */
+  --color-bg-info-light: #e3fafc; /** Neutral system messages and tips. Aqua, not blue — blue is the brand. */
+  --color-bg-info-idle: #1ed3eb; /** Neutral system messages and tips. Aqua, not blue — blue is the brand. */
+  --color-bg-info-hovered: #4bdcef; /** Neutral system messages and tips. Aqua, not blue — blue is the brand. */
+  --color-bg-info-focused: #4bdcef; /** Neutral system messages and tips. Aqua, not blue — blue is the brand. */
+  --color-bg-update-light: #fef9e8; /** New, beta, changed. */
+  --color-bg-update-idle: #f9c517; /** New, beta, changed. */
+  --color-bg-update-hovered: #fad145; /** New, beta, changed. */
+  --color-bg-update-focused: #fad145; /** New, beta, changed. */
+  --color-bg-accent-purple: #f2efff; /** Decorative purple fill — avatars, category chips, chart series. Never a status. */
+  --color-bg-accent-blue: #ebf2fe; /** Decorative blue fill — avatars, category chips, chart series. Never a status. */
+  --color-bg-accent-aqua: #e3fafc; /** Decorative aqua fill — avatars, category chips, chart series. Never a status. */
+  --color-bg-accent-mint: #e5fbf9; /** Decorative mint fill — avatars, category chips, chart series. Never a status. */
+  --color-bg-accent-yellow: #fef9e8; /** Decorative yellow fill — avatars, category chips, chart series. Never a status. */
+  --color-bg-accent-orange: #fff2e9; /** Decorative orange fill — avatars, category chips, chart series. Never a status. */
+  --color-bg-accent-red: #ffeced; /** Decorative red fill — avatars, category chips, chart series. Never a status. */
+  --color-bg-accent-pink: #ffebf5; /** Decorative pink fill — avatars, category chips, chart series. Never a status. */
+  --color-border-brand-light: #a5c6fb; /** brand edge, low emphasis. */
+  --color-border-brand-default: #7cabf9; /** brand edge, default. */
+  --color-border-brand-bold: #629bf8; /** brand edge, bold. */
+  --color-border-negative-light: #fe9b9b; /** negative edge, low emphasis. */
+  --color-border-negative-default: #fd6d6d; /** negative edge, default. */
+  --color-border-negative-bold: #fd5151; /** negative edge, bold. */
+  --color-border-positive-light: #9cd7a9; /** positive edge, low emphasis. */
+  --color-border-positive-default: #6fc482; /** positive edge, default. */
+  --color-border-positive-bold: #53b96a; /** positive edge, bold. */
+  --color-border-warning-light: #ffc49b; /** warning edge, low emphasis. */
+  --color-border-warning-default: #ffa96d; /** warning edge, default. */
+  --color-border-warning-bold: #ff9851; /** warning edge, bold. */
+  --color-border-info-light: #98ebf6; /** info edge, low emphasis. */
+  --color-border-info-default: #68e2f2; /** info edge, default. */
+  --color-border-info-bold: #4bdcef; /** info edge, bold. */
+  --color-border-update-light: #fce494; /** update edge, low emphasis. */
+  --color-border-update-default: #fbd864; /** update edge, default. */
+  --color-border-update-bold: #fad145; /** update edge, bold. */
+}

@@ -1,8 +1,10 @@
 import StyleDictionary from 'style-dictionary';
 
-const T = 'tokens/';
+const T = 'design-tokens/';
 const CORE = T + 'core.value.tokens.json';
-const STYLES = [T + 'typography.styles.tokens.json', T + 'effects.styles.tokens.json'];
+// NOTE: elevation (effects) tokens live inline in core.value.tokens.json — there is
+// no separate effects.styles file, so only typography.styles is combined in here.
+const STYLES = [T + 'typography.styles.tokens.json'];
 
 // Figma writes font weight as a style NAME. CSS needs a number.
 const WEIGHTS = { Thin:100, ExtraLight:200, Light:300, Regular:400, Medium:500,
@@ -63,19 +65,20 @@ const native = (sources) =>
     },
   });
 
-// :root — core, light colours, web space + type, styles
+// :root — core, light colours, web type, styles
+// NOTE: there is no semantic spacing/radius file yet (spacing-* and borderradius-*
+// only exist as core primitives) — that's a design gap, reported rather than filled in.
 await css('tokens.css',
-  [CORE, T+'semantic-color.light.tokens.json', T+'semantic-space.web.tokens.json',
-   T+'type.web.tokens.json', ...STYLES],
+  [CORE, T+'semantic.light.tokens.json',
+   T+'typography.web.tokens.json', ...STYLES],
   ':root').buildAllPlatforms();
 
 // dark — only the colours that change
 await css('tokens-dark.css',
-  [CORE, T+'semantic-color.dark.tokens.json'],
+  [CORE, T+'semantic.dark.tokens.json'],
   '[data-theme="dark"]',
-  (t) => t.filePath.includes('semantic-color.dark')).buildAllPlatforms();
+  (t) => t.filePath.includes('semantic.dark')).buildAllPlatforms();
 
 // iOS + Android — mobile mode
-await native([CORE, T+'semantic-color.light.tokens.json',
-  T+'semantic-space.mobile.tokens.json', T+'type.mobile.tokens.json',
-  ...STYLES]).buildAllPlatforms();
+await native([CORE, T+'semantic.light.tokens.json',
+  T+'typography.mobile.tokens.json', ...STYLES]).buildAllPlatforms();

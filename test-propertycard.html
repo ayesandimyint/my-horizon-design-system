@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PropertyCard Component Test</title>
+  <link rel="stylesheet" href="build/css/tokens.css">
+  <link rel="stylesheet" href="src/components/propertyCard/PropertyCard.css">
+  <style>
+    * { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f5f6f7;
+      padding: 40px 20px;
+    }
+    .test-container {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    .story-section {
+      margin-bottom: 60px;
+    }
+    .story-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #2a384d;
+      margin-bottom: 20px;
+      padding: 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="test-container">
+
+    <!-- Story: Default -->
+    <div class="story-section">
+      <div class="story-title">Default Story</div>
+      <div class="property-card">
+        <div class="property-card__container">
+          <div class="property-card__content">
+            <div class="property-card__image-wrapper">
+              <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=450&h=350&fit=crop"
+                   alt="Casa do Bairro" class="property-card__image">
+              <div class="property-card__overlay"></div>
+              <button class="property-card__favorite-btn" onclick="alert('Favorite clicked!')">
+                <svg class="property-card__heart-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="property-card__text">
+              <div class="property-card__header">
+                <h3 class="property-card__title">Casa do Bairro</h3>
+                <p class="property-card__location">Alfama, Lisbon · 1.2 km from centre</p>
+              </div>
+              <div class="property-card__footer">
+                <div class="property-card__rating">
+                  <span class="property-card__rating-value">4.7</span>
+                  <span class="property-card__review-count">(318 reviews)</span>
+                </div>
+                <div class="property-card__price">
+                  <span class="property-card__price-amount">EUR 121</span>
+                  <span class="property-card__price-unit">per night</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Story: Favorited -->
+    <div class="story-section">
+      <div class="story-title">Favorited Story</div>
+      <div class="property-card">
+        <div class="property-card__container">
+          <div class="property-card__content">
+            <div class="property-card__image-wrapper">
+              <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=450&h=350&fit=crop"
+                   alt="Luxury Penthouse" class="property-card__image">
+              <div class="property-card__overlay"></div>
+              <button class="property-card__favorite-btn" onclick="alert('Favorite clicked!')">
+                <svg class="property-card__heart-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="property-card__text">
+              <div class="property-card__header">
+                <h3 class="property-card__title">Luxury Penthouse</h3>
+                <p class="property-card__location">Príncipe Real, Lisbon · 0.8 km from centre</p>
+              </div>
+              <div class="property-card__footer">
+                <div class="property-card__rating">
+                  <span class="property-card__rating-value">4.9</span>
+                  <span class="property-card__review-count">(542 reviews)</span>
+                </div>
+                <div class="property-card__price">
+                  <span class="property-card__price-amount">EUR 285</span>
+                  <span class="property-card__price-unit">per night</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Story: No Image -->
+    <div class="story-section">
+      <div class="story-title">No Image Story</div>
+      <div class="property-card">
+        <div class="property-card__container">
+          <div class="property-card__content">
+            <div class="property-card__image-wrapper" style="background-color: #ecedef;">
+              <div class="property-card__overlay"></div>
+              <button class="property-card__favorite-btn" onclick="alert('Favorite clicked!')">
+                <svg class="property-card__heart-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="property-card__text">
+              <div class="property-card__header">
+                <h3 class="property-card__title">Cozy Studio</h3>
+                <p class="property-card__location">Baixa, Lisbon · 0.5 km from centre</p>
+              </div>
+              <div class="property-card__footer">
+                <div class="property-card__rating">
+                  <span class="property-card__rating-value">4.5</span>
+                  <span class="property-card__review-count">(124 reviews)</span>
+                </div>
+                <div class="property-card__price">
+                  <span class="property-card__price-amount">EUR 85</span>
+                  <span class="property-card__price-unit">per night</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

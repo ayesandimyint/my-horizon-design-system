@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 }
 
 .property-card__container {
@@ -38,6 +39,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: var(--borderradius-sm);
+  pointer-events: none;
 }
 
 .property-card__overlay {
@@ -52,15 +54,15 @@
   position: absolute;
   top: var(--spacing-lg);
   right: var(--spacing-lg);
-  width: 32px;
-  height: 32px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: var(--color-bg-negative-idle);
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--spacing-base);
+  padding: 0;
   cursor: pointer;
   color: var(--color-icon-inverse);
   transition: background-color 0.2s ease;
@@ -71,13 +73,21 @@
 }
 
 .property-card__favorite-btn:focus {
-  outline: none;
+  outline: 2px solid var(--color-icon-inverse);
+  outline-offset: 2px;
   background-color: var(--color-bg-negative-focused);
 }
 
 .property-card__heart-icon {
   width: 12px;
   height: 12px;
+  flex-shrink: 0;
+}
+
+.property-card__favorite-btn svg {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
 }
 
 /* Text Section */
@@ -87,6 +97,7 @@
   gap: var(--spacing-sm);
   width: 100%;
   overflow: hidden;
+  word-break: break-word;
 }
 
 .property-card__header {
@@ -102,7 +113,6 @@
   font-weight: 600;
   line-height: var(--lineheight-xl);
   color: var(--color-text-primary);
-  word-break: break-word;
 }
 
 .property-card__location {
@@ -112,7 +122,6 @@
   font-weight: 500;
   line-height: var(--lineheight-md);
   color: var(--color-text-secondary);
-  word-break: break-word;
 }
 
 .property-card__footer {

@@ -1,3 +1,266 @@
 :root {
-
+  --color-aqua-100: #e3fafc; /** aqua 100 */
+  --color-aqua-200: #b9f1f9; /** aqua 200 */
+  --color-aqua-300: #98ebf6; /** aqua 300 */
+  --color-aqua-400: #68e2f2; /** aqua 400 */
+  --color-aqua-500: #4bdcef; /** aqua 500 */
+  --color-aqua-600: #1ed3eb; /** aqua 600 — pure hue anchor */
+  --color-aqua-700: #1bc0d6; /** aqua 700 */
+  --color-aqua-800: #1596a7; /** aqua 800 */
+  --color-aqua-900: #117481; /** aqua 900 */
+  --color-aqua-1000: #0d5963; /** aqua 1000 */
+  --color-blue-100: #ebf2fe; /** blue 100 */
+  --color-blue-200: #c2d8fc; /** blue 200 */
+  --color-blue-300: #a5c6fb; /** blue 300 */
+  --color-blue-400: #7cabf9; /** blue 400 */
+  --color-blue-500: #629bf8; /** blue 500 */
+  --color-blue-600: #3b82f6; /** blue 600 — pure hue anchor */
+  --color-blue-700: #3677e0; /** blue 700 */
+  --color-blue-800: #2a5daf; /** blue 800 */
+  --color-blue-900: #214888; /** blue 900 */
+  --color-blue-1000: #193768; /** blue 1000 */
+  --color-green-100: #eaf6ec; /** green 100 */
+  --color-green-200: #bce4c5; /** green 200 */
+  --color-green-300: #9cd7a9; /** green 300 */
+  --color-green-400: #6fc482; /** green 400 */
+  --color-green-500: #53b96a; /** green 500 */
+  --color-green-600: #28a745; /** green 600 — pure hue anchor */
+  --color-green-700: #24983f; /** green 700 */
+  --color-green-800: #1c7731; /** green 800 */
+  --color-green-900: #165c26; /** green 900 */
+  --color-green-1000: #11461d; /** green 1000 */
+  --color-mint-100: #e5fbf9; /** mint 100 */
+  --color-mint-200: #b1f4ed; /** mint 200 */
+  --color-mint-300: #8beee4; /** mint 300 */
+  --color-mint-400: #56e6d8; /** mint 400 */
+  --color-mint-500: #35e1d1; /** mint 500 */
+  --color-mint-600: #03dac5; /** mint 600 — pure hue anchor */
+  --color-mint-700: #03c6b3; /** mint 700 */
+  --color-mint-800: #029b8c; /** mint 800 */
+  --color-mint-900: #02786c; /** mint 900 */
+  --color-mint-1000: #015c53; /** mint 1000 */
+  --color-orange-100: #fff2e9; /** orange 100 */
+  --color-orange-200: #ffd7bb; /** orange 200 */
+  --color-orange-300: #ffc49b; /** orange 300 */
+  --color-orange-400: #ffa96d; /** orange 400 */
+  --color-orange-500: #ff9851; /** orange 500 */
+  --color-orange-600: #ff7e25; /** orange 600 — pure hue anchor */
+  --color-orange-700: #e87322; /** orange 700 */
+  --color-orange-800: #b5591a; /** orange 800 */
+  --color-orange-900: #8c4514; /** orange 900 */
+  --color-orange-1000: #6b3510; /** orange 1000 */
+  --color-pink-100: #ffebf5; /** pink 100 */
+  --color-pink-200: #ffd6ea; /** pink 200 */
+  --color-pink-300: #ffaad3; /** pink 300 */
+  --color-pink-400: #ff84df; /** pink 400 */
+  --color-pink-500: #ff6cb3; /** pink 500 */
+  --color-pink-600: #ff47a0; /** pink 600 — pure hue anchor */
+  --color-pink-700: #e84192; /** pink 700 */
+  --color-pink-800: #b53272; /** pink 800 */
+  --color-pink-900: #8c2758; /** pink 900 */
+  --color-pink-1000: #6b1e43; /** pink 1000 */
+  --color-purple-100: #f2efff; /** purple 100 */
+  --color-purple-200: #d7cdfd; /** purple 200 */
+  --color-purple-300: #c3b5fd; /** purple 300 */
+  --color-purple-400: #a893fc; /** purple 400 */
+  --color-purple-500: #977efb; /** purple 500 */
+  --color-purple-600: #7d5efa; /** purple 600 — pure hue anchor */
+  --color-purple-700: #7256e4; /** purple 700 */
+  --color-purple-800: #5943b2; /** purple 800 */
+  --color-purple-900: #45348a; /** purple 900 */
+  --color-purple-1000: #352769; /** purple 1000 */
+  --color-red-100: #ffeced; /** red 100 */
+  --color-red-200: #febbbb; /** red 200 */
+  --color-red-300: #fe9b9b; /** red 300 */
+  --color-red-400: #fd6d6d; /** red 400 */
+  --color-red-500: #fd5151; /** red 500 */
+  --color-red-600: #fc2525; /** red 600 — pure hue anchor */
+  --color-red-700: #e52222; /** red 700 */
+  --color-red-800: #b31a1a; /** red 800 */
+  --color-red-900: #8b1414; /** red 900 */
+  --color-red-1000: #6a1010; /** red 1000 */
+  --color-yellow-100: #fef9e8; /** yellow 100 */
+  --color-yellow-200: #fdedb7; /** yellow 200 */
+  --color-yellow-300: #fce494; /** yellow 300 */
+  --color-yellow-400: #fbd864; /** yellow 400 */
+  --color-yellow-500: #fad145; /** yellow 500 */
+  --color-yellow-600: #f9c517; /** yellow 600 — pure hue anchor */
+  --color-yellow-700: #e3b315; /** yellow 700 */
+  --color-yellow-800: #b18c10; /** yellow 800 */
+  --color-yellow-900: #896c0d; /** yellow 900 */
+  --color-yellow-1000: #69530a; /** yellow 1000 */
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #f5f6f7;
+  --color-neutral-50a: rgba(16, 31, 55, 0.04);
+  --color-neutral-100: #ecedef;
+  --color-neutral-100a: rgba(16, 31, 55, 0.08);
+  --color-neutral-200: #e0e2e5;
+  --color-neutral-200a: rgba(16, 31, 55, 0.13);
+  --color-neutral-300: #c3c7cd;
+  --color-neutral-300a: rgba(16, 31, 55, 0.25);
+  --color-neutral-400: #b5bac1;
+  --color-neutral-400a: rgba(16, 31, 55, 0.31);
+  --color-neutral-500: #8c939f;
+  --color-neutral-500a: rgba(16, 31, 55, 0.48);
+  --color-neutral-600: #707987;
+  --color-neutral-700: #475365;
+  --color-neutral-800: #2a384d;
+  --color-neutral-900: #1c2a41;
+  --color-neutral-1000: #101f37;
+  --spacing-none: 0px;
+  --spacing-xs: 2px;
+  --spacing-base: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 32px;
+  --spacing-3xl: 48px;
+  --spacing-jumbo: 64px;
+  --spacing-negative-4: -4px;
+  --spacing-negative-8: -8px;
+  --borderwidth-05: 0.5px;
+  --borderwidth-1: 1px;
+  --borderwidth-2: 2px;
+  --borderradius-xs: 4px;
+  --borderradius-sm: 8px;
+  --borderradius-md: 16px;
+  --borderradius-lg: 32px;
+  --borderradius-circle: 10000px;
+  --elevation-level1: 2px;
+  --elevation-level2: 4px;
+  --elevation-level3: 8px;
+  --elevation-blur-level1: 8px;
+  --elevation-blur-level2: 16px;
+  --elevation-blur-level3: 20px;
+  --elevation-color: rgba(16, 31, 55, 0.25);
+  --color-bg-base: #ffffff; /** The page behind everything. */
+  --color-bg-inverse: #101f37; /** Tooltips, toasts, dark bars. */
+  --color-bg-surfaceprimary: #f5f6f7; /** Cards, sheets, modals, table rows. */
+  --color-bg-surfacesecondary: #ecedef; /** Wells, empty states, code blocks. */
+  --color-bg-overlay: rgba(16, 31, 55, 0.13); /** Scrim behind modals. */
+  --color-bg-disabled: #e0e2e5; /** Disabled control fill. Pairs with text/disabled. */
+  --color-text-primary: #2a384d; /** Body copy. */
+  --color-text-secondary: #707987; /** Secondary copy, meta, captions. */
+  --color-text-bold: #101f37; /** Headings and emphasis. */
+  --color-text-disabled: #b5bac1; /** Disabled labels only. Never carries meaning. */
+  --color-text-inverse: #ffffff; /** Text on bold fills and bg/inverse. */
+  --color-text-inversesecondary: #f5f6f7; /** Secondary text on bold fills. */
+  --color-text-disabledondark: #e0e2e5; /** Disabled label on a dark surface. */
+  --color-text-brand: #2a5daf; /** Brand copy and links. Horizon blue. */
+  --color-text-negative: #b31a1a; /** Errors, destructive copy. */
+  --color-text-positive: #1c7731; /** Confirmation copy. */
+  --color-text-warning: #b5591a; /** Caution copy. */
+  --color-text-info: #1596a7; /** Informational copy. Aqua, not blue — blue is the brand. */
+  --color-text-update: #b18c10; /** Update / new copy. */
+  --color-icon-primary: #2a384d; /** Default icon. */
+  --color-icon-secondary: #707987; /** Low-emphasis icon. */
+  --color-icon-bold: #101f37; /** Emphasised icon. */
+  --color-icon-disabled: #b5bac1; /** Disabled icon. */
+  --color-icon-inverse: #ffffff; /** Icon on bold fills. */
+  --color-icon-inversesecondary: #f5f6f7; /** Secondary icon on bold fills. */
+  --color-icon-disabledondark: #e0e2e5; /** Disabled icon on a dark surface. */
+  --color-icon-brand: #3b82f6; /** Brand icon. Horizon blue. */
+  --color-icon-negative: #fc2525; /** Error icon. */
+  --color-icon-positive: #28a745; /** Success icon. */
+  --color-icon-warning: #ff7e25; /** Warning icon. */
+  --color-icon-info: #1ed3eb; /** Informational icon. Aqua, not blue. */
+  --color-icon-update: #f9c517; /** Update icon. */
+  --color-border-primary: #c3c7cd; /** Cards, table dividers, the default line. */
+  --color-border-secondary: #b5bac1; /** Emphasised container edges. */
+  --color-border-inverse: #101f37; /** Border on bg/inverse. */
+  --color-bg-primary-light: #ebf2fe; /** Low-emphasis brand fill. */
+  --color-bg-primary-idle: #3b82f6; /** Primary button at rest. Horizon logo blue. */
+  --color-bg-primary-hovered: #629bf8; /** Primary button hover. */
+  --color-bg-primary-focused: #629bf8; /** Primary button focused. */
+  --color-bg-primary-neutral-idle: #101f37; /** Neutral (inverse) button at rest. */
+  --color-bg-primary-neutral-hovered: #1c2a41; /** Neutral button hover. */
+  --color-bg-primary-neutral-focused: #2a384d; /** Neutral button focused. */
+  --color-bg-negative-light: #ffeced; /** Errors, failed payment, destructive actions. */
+  --color-bg-negative-idle: #fc2525; /** Errors, failed payment, destructive actions. */
+  --color-bg-negative-hovered: #fd5151; /** Errors, failed payment, destructive actions. */
+  --color-bg-negative-focused: #fd5151; /** Errors, failed payment, destructive actions. */
+  --color-bg-positive-light: #eaf6ec; /** Booking confirmed, payment taken, saved. */
+  --color-bg-positive-idle: #28a745; /** Booking confirmed, payment taken, saved. */
+  --color-bg-positive-hovered: #53b96a; /** Booking confirmed, payment taken, saved. */
+  --color-bg-positive-focused: #53b96a; /** Booking confirmed, payment taken, saved. */
+  --color-bg-warning-light: #fff2e9; /** Needs attention — expiring, low availability. */
+  --color-bg-warning-idle: #ff7e25; /** Needs attention — expiring, low availability. */
+  --color-bg-warning-hovered: #ff9851; /** Needs attention — expiring, low availability. */
+  --color-bg-warning-focused: #ff9851; /** Needs attention — expiring, low availability. */
+  --color-bg-info-light: #e3fafc; /** Neutral system messages and tips. Aqua, not blue — blue is the brand. */
+  --color-bg-info-idle: #1ed3eb; /** Neutral system messages and tips. Aqua, not blue — blue is the brand. */
+  --color-bg-info-hovered: #4bdcef; /** Neutral system messages and tips. Aqua, not blue — blue is the brand. */
+  --color-bg-info-focused: #4bdcef; /** Neutral system messages and tips. Aqua, not blue — blue is the brand. */
+  --color-bg-update-light: #fef9e8; /** New, beta, changed. */
+  --color-bg-update-idle: #f9c517; /** New, beta, changed. */
+  --color-bg-update-hovered: #fad145; /** New, beta, changed. */
+  --color-bg-update-focused: #fad145; /** New, beta, changed. */
+  --color-bg-accent-purple: #f2efff; /** Decorative purple fill — avatars, category chips, chart series. Never a status. */
+  --color-bg-accent-blue: #ebf2fe; /** Decorative blue fill — avatars, category chips, chart series. Never a status. */
+  --color-bg-accent-aqua: #e3fafc; /** Decorative aqua fill — avatars, category chips, chart series. Never a status. */
+  --color-bg-accent-mint: #e5fbf9; /** Decorative mint fill — avatars, category chips, chart series. Never a status. */
+  --color-bg-accent-yellow: #fef9e8; /** Decorative yellow fill — avatars, category chips, chart series. Never a status. */
+  --color-bg-accent-orange: #fff2e9; /** Decorative orange fill — avatars, category chips, chart series. Never a status. */
+  --color-bg-accent-red: #ffeced; /** Decorative red fill — avatars, category chips, chart series. Never a status. */
+  --color-bg-accent-pink: #ffebf5; /** Decorative pink fill — avatars, category chips, chart series. Never a status. */
+  --color-border-brand-light: #a5c6fb; /** brand edge, low emphasis. */
+  --color-border-brand-default: #7cabf9; /** brand edge, default. */
+  --color-border-brand-bold: #629bf8; /** brand edge, bold. */
+  --color-border-negative-light: #fe9b9b; /** negative edge, low emphasis. */
+  --color-border-negative-default: #fd6d6d; /** negative edge, default. */
+  --color-border-negative-bold: #fd5151; /** negative edge, bold. */
+  --color-border-positive-light: #9cd7a9; /** positive edge, low emphasis. */
+  --color-border-positive-default: #6fc482; /** positive edge, default. */
+  --color-border-positive-bold: #53b96a; /** positive edge, bold. */
+  --color-border-warning-light: #ffc49b; /** warning edge, low emphasis. */
+  --color-border-warning-default: #ffa96d; /** warning edge, default. */
+  --color-border-warning-bold: #ff9851; /** warning edge, bold. */
+  --color-border-info-light: #98ebf6; /** info edge, low emphasis. */
+  --color-border-info-default: #68e2f2; /** info edge, default. */
+  --color-border-info-bold: #4bdcef; /** info edge, bold. */
+  --color-border-update-light: #fce494; /** update edge, low emphasis. */
+  --color-border-update-default: #fbd864; /** update edge, default. */
+  --color-border-update-bold: #fad145; /** update edge, bold. */
+  --fontfamily-body: Figtree; /** Body copy family. */
+  --fontfamily-heading: Manrope; /** Heading family. */
+  --fontfamily-caption: Figtree; /** Caption family. */
+  --fontfamily-label: Figtree; /** Label family. */
+  --fontsize-2xs: 8px; /** Below the Material scale — inherited. Fixed across breakpoints. */
+  --fontsize-xs: 11px; /** Material label-small (11). Fixed across breakpoints. */
+  --fontsize-sm: 12px; /** Material body-small / label-medium (12). Fixed — body text never shrinks. */
+  --fontsize-md: 14px; /** Material body-medium / label-large / title-small (14). Fixed. */
+  --fontsize-lg: 16px; /** Material body-large / title-medium (16). Fixed. */
+  --fontsize-xl: 22px; /** Compact keeps 20; Medium = title-large (22); Expanded = headline-small (24). */
+  --fontsize-2xl: 28px; /** headline-small (24) → headline-medium (28) → headline-large (32). */
+  --fontsize-3xl: 36px; /** headline-large (32) → display-small (36) → display-medium (45). */
+  --fontsize-jumbo: 57px; /** display-medium (45) → display-large (57) → 64, above the Material maximum. */
+  --lineheight-2xs: 12px; /** Paired with fontSize/2xs on Material’s size-to-line-height ratios. */
+  --lineheight-xs: 16px; /** Paired with fontSize/xs on Material’s size-to-line-height ratios. */
+  --lineheight-sm: 16px; /** Paired with fontSize/sm on Material’s size-to-line-height ratios. */
+  --lineheight-md: 20px; /** Paired with fontSize/md on Material’s size-to-line-height ratios. */
+  --lineheight-lg: 24px; /** Paired with fontSize/lg on Material’s size-to-line-height ratios. */
+  --lineheight-xl: 28px; /** Paired with fontSize/xl on Material’s size-to-line-height ratios. */
+  --lineheight-2xl: 36px; /** Paired with fontSize/2xl on Material’s size-to-line-height ratios. */
+  --lineheight-3xl: 44px; /** Paired with fontSize/3xl on Material’s size-to-line-height ratios. */
+  --lineheight-jumbo: 64px; /** Paired with fontSize/jumbo on Material’s size-to-line-height ratios. */
+  --h1: 500 57px/64px Manrope;
+  --h2: 600 36px/44px Manrope;
+  --h3: 400 28px/36px Manrope;
+  --h4: 600 22px/28px Manrope;
+  --h5: 400 16px/24px Manrope;
+  --h6: 600 14px/20px Manrope;
+  --caption1: 600 16px/24px Figtree;
+  --caption2: 600 14px/20px Figtree;
+  --body1: 400 16px/24px Figtree;
+  --body2: 500 14px/20px Figtree;
+  --body3: 400 14px/16px Figtree;
+  --body4: 500 11px/16px Figtree;
+  --body5: 500 8px/12px Figtree;
+  --bodyunderlined2: 600 14px/20px Figtree;
+  --bodyunderlined3: 600 12px/16px Figtree;
+  --label: 600 12px/16px Figtree;
+  --button1: 600 14px/20px Figtree;
+  --button2: 600 12px/16px Figtree;
+  --cap-body1: 400 22px/20px Figtree;
 }
