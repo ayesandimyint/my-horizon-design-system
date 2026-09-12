@@ -222,6 +222,10 @@
   --color-border-update-light: #fce494; /** update edge, low emphasis. */
   --color-border-update-default: #fbd864; /** update edge, default. */
   --color-border-update-bold: #fad145; /** update edge, bold. */
+  --color-text-subtle: #707987; /** Subtle text. Used for neutral badge labels and low-contrast text. */
+  --color-text-accent: #5943b2; /** Accent brand text. Used for accent badge labels. */
+  --color-bg-accent-idle: #7d5efa; /** Accent status indicator. Used for accent badge dots. */
+  --color-bg-accent-light: #f2efff; /** Accent badge background. Subtle fill for accent badges. */
   --fontfamily-body: Figtree; /** Body copy family. */
   --fontfamily-heading: Manrope; /** Heading family. */
   --fontfamily-caption: Figtree; /** Caption family. */

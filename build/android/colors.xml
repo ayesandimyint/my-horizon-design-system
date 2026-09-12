@@ -201,4 +201,8 @@
   <color name="color_border_update_light">#fffce494</color>
   <color name="color_border_update_default">#fffbd864</color>
   <color name="color_border_update_bold">#fffad145</color>
+  <color name="color_text_subtle">#ff707987</color>
+  <color name="color_text_accent">#ff5943b2</color>
+  <color name="color_bg_accent_idle">#ff7d5efa</color>
+  <color name="color_bg_accent_light">#fff2efff</color>
 </resources>

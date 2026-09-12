@@ -87,4 +87,8 @@
   --color-border-update-light: #fce494; /** update edge, low emphasis. */
   --color-border-update-default: #fbd864; /** update edge, default. */
   --color-border-update-bold: #fad145; /** update edge, bold. */
+  --color-text-subtle: #b5bac1; /** Subtle text. Used for neutral badge labels and low-contrast text. */
+  --color-text-accent: #a893fc; /** Accent brand text. Used for accent badge labels. */
+  --color-bg-accent-idle: #7d5efa; /** Accent status indicator. Used for accent badge dots. */
+  --color-bg-accent-light: #f2efff; /** Accent badge background. Subtle fill for accent badges. */
 }

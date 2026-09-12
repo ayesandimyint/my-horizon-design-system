@@ -41,6 +41,8 @@ public class Tokens {
     public static let colorAqua900 = UIColor(red: 0.067, green: 0.455, blue: 0.506, alpha: 1) /** aqua 900 */
     public static let colorBgAccentAqua = UIColor(red: 0.890, green: 0.980, blue: 0.988, alpha: 1) /** Decorative aqua fill — avatars, category chips, chart series. Never a status. */
     public static let colorBgAccentBlue = UIColor(red: 0.922, green: 0.949, blue: 0.996, alpha: 1) /** Decorative blue fill — avatars, category chips, chart series. Never a status. */
+    public static let colorBgAccentIdle = UIColor(red: 0.490, green: 0.369, blue: 0.980, alpha: 1) /** Accent status indicator. Used for accent badge dots. */
+    public static let colorBgAccentLight = UIColor(red: 0.949, green: 0.937, blue: 1.000, alpha: 1) /** Accent badge background. Subtle fill for accent badges. */
     public static let colorBgAccentMint = UIColor(red: 0.898, green: 0.984, blue: 0.976, alpha: 1) /** Decorative mint fill — avatars, category chips, chart series. Never a status. */
     public static let colorBgAccentOrange = UIColor(red: 1.000, green: 0.949, blue: 0.914, alpha: 1) /** Decorative orange fill — avatars, category chips, chart series. Never a status. */
     public static let colorBgAccentPink = UIColor(red: 1.000, green: 0.922, blue: 0.961, alpha: 1) /** Decorative pink fill — avatars, category chips, chart series. Never a status. */
@@ -202,6 +204,7 @@ public class Tokens {
     public static let colorRed700 = UIColor(red: 0.898, green: 0.133, blue: 0.133, alpha: 1) /** red 700 */
     public static let colorRed800 = UIColor(red: 0.702, green: 0.102, blue: 0.102, alpha: 1) /** red 800 */
     public static let colorRed900 = UIColor(red: 0.545, green: 0.078, blue: 0.078, alpha: 1) /** red 900 */
+    public static let colorTextAccent = UIColor(red: 0.349, green: 0.263, blue: 0.698, alpha: 1) /** Accent brand text. Used for accent badge labels. */
     public static let colorTextBold = UIColor(red: 0.063, green: 0.122, blue: 0.216, alpha: 1) /** Headings and emphasis. */
     public static let colorTextBrand = UIColor(red: 0.165, green: 0.365, blue: 0.686, alpha: 1) /** Brand copy and links. Horizon blue. */
     public static let colorTextDisabled = UIColor(red: 0.710, green: 0.729, blue: 0.757, alpha: 1) /** Disabled labels only. Never carries meaning. */
@@ -213,6 +216,7 @@ public class Tokens {
     public static let colorTextPositive = UIColor(red: 0.110, green: 0.467, blue: 0.192, alpha: 1) /** Confirmation copy. */
     public static let colorTextPrimary = UIColor(red: 0.165, green: 0.220, blue: 0.302, alpha: 1) /** Body copy. */
     public static let colorTextSecondary = UIColor(red: 0.439, green: 0.475, blue: 0.529, alpha: 1) /** Secondary copy, meta, captions. */
+    public static let colorTextSubtle = UIColor(red: 0.439, green: 0.475, blue: 0.529, alpha: 1) /** Subtle text. Used for neutral badge labels and low-contrast text. */
     public static let colorTextUpdate = UIColor(red: 0.694, green: 0.549, blue: 0.063, alpha: 1) /** Update / new copy. */
     public static let colorTextWarning = UIColor(red: 0.710, green: 0.349, blue: 0.102, alpha: 1) /** Caution copy. */
     public static let colorYellow100 = UIColor(red: 0.996, green: 0.976, blue: 0.910, alpha: 1) /** yellow 100 */
