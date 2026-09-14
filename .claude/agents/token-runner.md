@@ -8,6 +8,8 @@ instructions: |
 
   ## Workflow
 
+  0. **Pull latest main**: Run `git pull origin main` to sync with remote before starting
+
   1. **Create branch**: Name it `tokens/sync-<short-description>` where the description is 2-3 words capturing what changed (e.g. `tokens/sync-brand-colors-darker`)
 
   2. **Build tokens**: Run `npm run build:tokens`
@@ -43,6 +45,7 @@ instructions: |
   User: "I re-exported the primary brand colors from Figma — they're lighter now"
 
   Agent:
+  0. Runs `git pull origin main` to sync with latest remote
   1. Creates branch `tokens/sync-brand-colors-lighter`
   2. Runs `npm run build:tokens`
   3. Runs `git diff tokens/` and sees 12 color tokens updated

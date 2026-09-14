@@ -438,5 +438,25 @@
     "$type": "color",
     "$value": "{color-yellow-500}",
     "$description": "update edge, bold."
+  },
+  "color-text-subtle": {
+    "$type": "color",
+    "$value": "{color-neutral-400}",
+    "$description": "Subtle text. Used for neutral badge labels and low-contrast text."
+  },
+  "color-text-accent": {
+    "$type": "color",
+    "$value": "{color-purple-400}",
+    "$description": "Accent brand text. Used for accent badge labels."
+  },
+  "color-bg-accent-idle": {
+    "$type": "color",
+    "$value": "{color-purple-600}",
+    "$description": "Accent status indicator. Used for accent badge dots."
+  },
+  "color-bg-accent-light": {
+    "$type": "color",
+    "$value": "{color-purple-100}",
+    "$description": "Accent badge background. Subtle fill for accent badges."
   }
 }
